@@ -1,0 +1,6 @@
+<ion-list lines="none">
+  @for (timer of timers; track timer; let index = $index) {
+    <app-timer [timerId]="timer.id"></app-timer>
+  }
+</ion-list>
+<div class="space"></div>
